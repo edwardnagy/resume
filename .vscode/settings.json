@@ -1,0 +1,24 @@
+{
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex-safe",
+      "command": "pdflatex",
+      "args": [
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-synctex=1",
+        "%DOC%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pdflatex-safe",
+      "tools": [
+        "pdflatex-safe"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipe.default": "pdflatex-safe"
+}
