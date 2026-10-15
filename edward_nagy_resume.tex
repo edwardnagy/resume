@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemPlain}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Edward Nagy} & Email: \href{mailto:nagy_edward99@yahoo.com}{nagy\_edward99@yahoo.com} \\
+  \href{https://linkedin.com/in/edward-nagy}{linkedin.com/in/edward-nagy} $|$ \href{https://github.com/edwardnagy}{github.com/edwardnagy} & Mobile: \href{tel:+40756419130}{(+40) 756 419 130} $|$ Brașov, Romania \\
+\end{tabular*}
+
+
+%-----------SUMMARY-----------------
+\section{Summary}
+\small{
+  Mobile Engineer with 7+ years of experience in cross-platform and native mobile development, specializing in \textbf{Flutter/Dart}, \textbf{Swift (UIKit)}, and \textbf{Kotlin/Java} to build scalable Android and iOS applications with clean architecture. Delivered products across fintech, aviation, healthcare, education, and IoT---including asset-management platforms for high-net-worth clients and consumer apps reaching hundreds of thousands of users with ratings up to 4.9/5. Experienced in end-to-end development, modular architecture, AI/LLM integration, offline-first systems, CI/CD automation, and open-source Flutter tooling.
+}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {KTO Group \normalfont{\small{(iGaming \& Entertainment Platform)}}}{Brazil (Remote)}
+      {Mobile Engineer (Flutter)}{Mar 2026 -- Oct 2026}
+      \resumeItemListStart
+        \resumeItem{Modular Architecture}
+          {Contributed to a large-scale Flutter app refactor, improving system architecture and developing reusable core, UI, design system, and feature packages.}
+        \resumeItem{Performance \& Security}
+          {Improved application security, privacy, performance, and stability across Android and iOS, reducing slow cold starts by 75\%.}
+        \resumeItem{Feature Delivery}
+          {Implemented and migrated critical user flows, including account and compliance verification, in-app notifications, and multi-layered authentication (PIN, biometrics, social login, 2FA).}
+        \resumeItem{Release \& Observability}
+          {Automated CI/CD pipelines for QA and production builds, enhanced diagnostics via centralized logging and crash reporting, and built initial automated E2E test flows with Maestro.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Eleven Systems \normalfont{\small{(Wealth Management \& Family Office Platforms)}}}{Florida, USA (Remote)}
+      {Mobile Engineer}{Oct 2024 -- Jan 2026}
+      \resumeItemListStart
+        \resumeItem{Multi-App Ecosystem}
+          {Developed and maintained 5 secure mobile applications (Android \& iOS) enabling high-net-worth individuals and family offices to monitor and manage assets, investments, and financial data.}
+        \resumeItem{Offline-First Architecture}
+          {Engineered full offline support across all application features, ensuring seamless portfolio access and reliable local data synchronization in low-connectivity environments.}
+        \resumeItem{AI/LLM Integration}
+          {Integrated conversational AI/LLM capabilities allowing users to dynamically query and analyze financial data within the platform.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Halcyon Mobile \normalfont{\small{(Mobile \& Web Software Consultancy)}}}{Cluj-Napoca, Romania}
+      {Flutter Developer}{Sep 2021 -- Sep 2024}
+      \resumeItemListStart
+        \resumeItem{End-to-End Product Delivery}
+          {Developed Android and iOS applications both independently and in agile cross-functional teams of 3--10 members (engineers, designers, QA, product managers).}
+        \resumeItem{Multi-Industry Releases}
+          {Shipped 6 production applications: a spiritual app (driving a 40\% DAU increase and 4.8/4.9 store ratings), a private aviation app, a physiotherapy companion app (health/fitness tracking), a native Android/Kotlin BLE light-control app, a white-labelled survey app, and a Flutter web educational platform.}
+        \resumeItem{Engineering Leadership}
+          {Conducted code reviews to enforce security, code quality, and design standards; standardized internal documentation, built developer tooling, and mentored junior engineers.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Neversoft Development \normalfont{\small{(Digital Products \& Software Services)}}}{Cluj-Napoca, Romania}
+      {Product Engineer}{May 2019 -- Aug 2021}
+      \resumeItemListStart
+        \resumeItem{End-to-End Engineering}
+          {Architected, designed (UI/UX), and built the first virtual student card in Cluj-Napoca---including database design, backend services (storage, auth, notifications), offline support, and savings tracking---scaling to thousands of students with a 4.9/5 rating on App Store and Google Play.}
+        \resumeItem{Team Mentorship}
+          {Organized a summer internship program to attract engineering talent, instructing and leading a team of 11 interns.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages \& Frameworks}
+      {Flutter, Dart, iOS (Swift, UIKit), Android (Kotlin, Java), SQL}
+    \resumeSubItem{Technologies \& Data}
+      {Firebase (Cloud Firestore), REST API, JSON, XML, MsSQL, SQLite, ObjectBox, NoSQL, Provider, Bloc, Melos (Monorepo), Stripe Payments, BLE (Bluetooth Low Energy), Google Analytics, Amplitude}
+    \resumeSubItem{Architecture \& Testing}
+      {Clean Architecture, Domain-Driven Design (DDD), MVVM, MVC, SOLID Principles, OOP, Mockito, Maestro (E2E Testing), Material Design, Apple Human Interface Guidelines}
+    \resumeSubItem{CI/CD \& Developer Tools}
+      {Git, GitHub Actions, GitLab CI, CircleCI, Codemagic, Fastlane, GitHub Copilot, Claude Code, Cursor, Antigravity, Android Studio, VS Code, Xcode, Figma, Adobe XD, InVision}
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {KTH Royal Institute of Technology}{Stockholm, Sweden}
+      {Master of Science in Autonomous Systems (Merit Scholarship, EIT Digital Exit Year)}{Aug 2023 -- May 2024}
+    \resumeSubheading
+      {Budapest University of Technology and Economics}{Budapest, Hungary}
+      {Master of Science in Autonomous Systems (Merit Scholarship, EIT Digital Entry Year)}{Sep 2022 -- Jun 2023}
+    \resumeSubheading
+      {Babeș-Bolyai University}{Cluj-Napoca, Romania}
+      {Bachelor of Science in Computer Science (Merit Scholarship)}{Sep 2018 -- Jul 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------PORTFOLIO & PROJECTS-----------------
+\section{Portfolio \& Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Flow Coordinator}
+      {A Flutter navigation and routing API that organizes screens into user flows using the Flow Controller (Coordinator) pattern, featuring full cross-platform support and 100\% unit test coverage. (\href{https://pub.dev/packages/flow_coordinator}{\underline{pub.dev/packages/flow\_coordinator}} $|$ \href{https://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-381802}{\underline{KTH Master's Thesis}})}
+    \resumeSubItem{Workeepr}
+      {Native iOS application for employees to track their work time and tasks (Swift, UIKit, Firebase Cloud Firestore).}
+    \resumeSubItem{GenieMail}
+      {AI Chrome extension for writing better emails faster (OpenAI, Make, Airtable, Softr, TypeScript).}
+    \resumeSubItem{Snake}
+      {Classic Snake game built in x86 Assembly featuring a graphical user interface.}
+    \resumeSubItem{Áprily Stairs}
+      {Cross-platform 2D game developed using libGDX and Java.}
+    \resumeSubItem{Firestone}
+      {Functional game engine written in Clojure.}
+  \resumeSubHeadingListEnd
+
+
+%-----------AWARDS & CERTIFICATES-----------------
+\section{Awards \& Certificates}
+  \resumeSubHeadingListStart
+    \resumeSubItem{A Card -- The Virtual Student Card (May 2021)}
+      {24th Transylvanian Students' Scientific Conference (ETDK), Cluj-Napoca. Awarded \textbf{3rd Prize}, \textbf{KMDSZ's Special Award}, and invited to present at the Hungarian National Students' Scientific Conference (OTDK) 2023.}
+    \resumeSubItem{Cambridge English: Advanced C1 (CAE)}
+      {Issued by Cambridge English (Aug 2017).}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
